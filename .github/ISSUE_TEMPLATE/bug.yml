@@ -1,0 +1,15 @@
+name: Incidencia / defecto
+description: Reportar un problema detectado en una solución entregada
+title: "[BUG] "
+body:
+  - type: textarea
+    id: observed
+    attributes: {label: Comportamiento observado}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Comportamiento esperado}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Evidencia / pasos para reproducir}
