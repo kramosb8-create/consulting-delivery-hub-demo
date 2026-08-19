@@ -1,0 +1,8 @@
+[
+  {"id":"GEI-101","title":"Entregar pronóstico de demanda completo por división","area":"Mercadeo","owner":"Gerente de Marca","due":"2026-08-21","progress":85,"status":"En curso","issue":101,"pr":112,"ci":"OK","release":"v1.0"},
+  {"id":"GEI-102","title":"Validar variaciones ±15% ForecastPro vs Demanda Mercadeo","area":"Abastecimiento","owner":"Jefa de Abastecimiento","due":"2026-08-22","progress":65,"status":"En curso","issue":102,"pr":null,"ci":"Pend.","release":"—"},
+  {"id":"GEI-103","title":"Publicar cobertura e inventario en riesgo actualizado","area":"Operaciones","owner":"Analista GEI","due":"2026-08-19","progress":100,"status":"Completado","issue":103,"pr":109,"ci":"OK","release":"v0.9"},
+  {"id":"GEI-104","title":"Ejecutar estrategia comercial de inventario en riesgo","area":"Ventas","owner":"Gerencia de Ventas","due":"2026-08-25","progress":40,"status":"En curso","issue":104,"pr":null,"ci":"—","release":"—"},
+  {"id":"GEI-105","title":"Definir responsable de actualización semanal del checklist","area":"Mercadeo","owner":"Gerente de Mercadeo","due":"2026-08-18","progress":30,"status":"Bloqueado","issue":105,"pr":null,"ci":"—","release":"—"},
+  {"id":"GEI-106","title":"Automatizar alerta de compromisos próximos a vencer","area":"Operaciones","owner":"Equipo Digital","due":"2026-08-28","progress":0,"status":"Pendiente","issue":106,"pr":null,"ci":"—","release":"—"}
+]
