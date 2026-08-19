@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo ejecutivo de trazabilidad de requerimientos, planes de acción y entregas digitales para consultoría." />
+  <title>Consulting Delivery Hub | Demo GitHub</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">DEMO TANGIBLE · GITHUB PARA CONSULTORÍA</p>
+      <h1>Consulting Delivery Hub</h1>
+      <p class="subtitle">Del requerimiento del cliente a producción, con evidencia y control.</p>
+    </div>
+    <div class="top-actions">
+      <span class="release">Release <strong>v1.0.0-demo</strong></span>
+      <button id="newRequestBtn" class="primary">+ Nueva solicitud</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero-grid">
+      <article class="hero-card"><span class="label">Caso de negocio</span><h2>FlowInvent / GEI</h2><p>Seguimiento ejecutivo de compromisos de Mercadeo, Abastecimiento, Operaciones y Ventas.</p><div class="chips"><span>Inventario</span><span>Forecast</span><span>Gobierno GEI</span></div></article>
+      <article class="hero-card accent"><span class="label">Valor de GitHub</span><h2>100% trazabilidad</h2><p>Cada necesidad se conecta con Issue, responsable, cambio, revisión, prueba y release.</p><div class="flow-mini"><span>Issue</span><b>→</b><span>PR</span><b>→</b><span>CI</span><b>→</b><span>Release</span></div></article>
+    </section>
+    <section class="kpi-grid" id="kpis"></section>
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">PORTAFOLIO EJECUTIVO</p><h2>Planes y compromisos</h2></div><div class="filters"><select id="areaFilter"><option value="Todas">Todas las áreas</option></select><select id="statusFilter"><option value="Todos">Todos los estados</option></select></div></div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Compromiso</th><th>Área</th><th>Responsable</th><th>Vence</th><th>Avance</th><th>Estado</th><th>Trazabilidad GitHub</th></tr></thead><tbody id="actionRows"></tbody></table></div>
+    </section>
+    <section class="split-grid">
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">PIPELINE DE ENTREGA</p><h2>Requerimiento → Producción</h2></div></div><div class="pipeline" id="pipeline"></div></article>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">EVIDENCIA</p><h2>Últimos cambios controlados</h2></div></div><div class="timeline" id="timeline"></div></article>
+    </section>
+    <section class="panel"><div class="panel-head"><div><p class="eyebrow">DEMO PARA CLIENTE</p><h2>Qué demuestra este repositorio</h2></div></div><div class="benefits-grid"><div><strong>1. Gobierno</strong><p>Roles, decisiones, criterios de aceptación y responsables visibles.</p></div><div><strong>2. Control de cambios</strong><p>Ningún cambio entra a producción sin Pull Request y revisión.</p></div><div><strong>3. Calidad automática</strong><p>GitHub Actions ejecuta pruebas antes de aprobar entregas.</p></div><div><strong>4. Evidencia auditable</strong><p>Issues, commits, PRs y releases construyen el historial del proyecto.</p></div></div></section>
+  </main>
+  <dialog id="requestDialog"><form method="dialog" id="requestForm"><div class="dialog-head"><h2>Nueva solicitud del cliente</h2><button value="cancel" class="icon-btn">×</button></div><p>En un proyecto real este formulario se convertiría en un <strong>GitHub Issue</strong> con trazabilidad.</p><label>Solicitud<input id="reqTitle" required placeholder="Ej. Agregar alerta de compromisos vencidos" /></label><label>Área<select id="reqArea"><option>Mercadeo</option><option>Abastecimiento</option><option>Operaciones</option><option>Ventas</option></select></label><label>Prioridad<select id="reqPriority"><option>Alta</option><option>Media</option><option>Baja</option></select></label><menu><button value="cancel" class="secondary">Cancelar</button><button id="saveRequest" value="default" class="primary">Crear solicitud demo</button></menu></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
