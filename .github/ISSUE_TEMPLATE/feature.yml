@@ -1,0 +1,39 @@
+name: Solicitud de negocio
+description: Registrar una necesidad funcional o mejora del cliente
+title: "[REQ] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / necesidad
+      description: ¿Qué necesita resolver el negocio?
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Valor esperado
+      description: ¿Qué indicador, riesgo, tiempo o costo mejora?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options: [Mercadeo, Abastecimiento, Operaciones, Ventas, Finanzas, TI]
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      options: [Crítica, Alta, Media, Baja]
+    validations:
+      required: true
