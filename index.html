@@ -38,5 +38,6 @@
   <dialog id="requestDialog"><form method="dialog" id="requestForm"><div class="dialog-head"><h2>Nueva solicitud del cliente</h2><button value="cancel" class="icon-btn">×</button></div><p>En un proyecto real este formulario se convertiría en un <strong>GitHub Issue</strong> con trazabilidad.</p><label>Solicitud<input id="reqTitle" required placeholder="Ej. Agregar alerta de compromisos vencidos" /></label><label>Área<select id="reqArea"><option>Mercadeo</option><option>Abastecimiento</option><option>Operaciones</option><option>Ventas</option></select></label><label>Prioridad<select id="reqPriority"><option>Alta</option><option>Media</option><option>Baja</option></select></label><menu><button value="cancel" class="secondary">Cancelar</button><button id="saveRequest" value="default" class="primary">Crear solicitud demo</button></menu></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script type="module" src="src/app.js"></script>
+  <script type="module" src="src/alerts.js"></script>
 </body>
 </html>
